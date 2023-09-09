@@ -3,13 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.ferrari.FerrariFragment">
+    tools:context=".ui.rangerover.RangeRoverFragment">
 
     <WebView
-        android:id="@+id/ferrari_web_view"
+        android:id="@+id/range_web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 
 </FrameLayout>

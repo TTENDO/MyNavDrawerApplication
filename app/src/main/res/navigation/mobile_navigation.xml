@@ -27,4 +27,24 @@
         android:name="com.ttendo.mynavdrawerapplication.ui.ferrari.FerrariFragment"
         android:label="fragment_ferrari"
         tools:layout="@layout/fragment_ferrari" />
+    <fragment
+        android:id="@+id/nav_mercedes"
+        android:name="com.ttendo.mynavdrawerapplication.ui.mercedes.MercedesFragment"
+        android:label="fragment_mercedes"
+        tools:layout="@layout/fragment_mercedes" />
+    <fragment
+        android:id="@+id/nav_nissan"
+        android:name="com.ttendo.mynavdrawerapplication.ui.nissan.NissanFragment"
+        android:label="fragment_nissan"
+        tools:layout="@layout/fragment_nissan" />
+    <fragment
+        android:id="@+id/nav_range_rover"
+        android:name="com.ttendo.mynavdrawerapplication.ui.rangerover.RangeRoverFragment"
+        android:label="fragment_range_rover"
+        tools:layout="@layout/fragment_range_rover" />
+    <fragment
+        android:id="@+id/nav_chevloret"
+        android:name="com.ttendo.mynavdrawerapplication.ui.chevloret.ChevloretFragment"
+        android:label="fragment_chevloret"
+        tools:layout="@layout/fragment_chevloret" />
 </navigation>

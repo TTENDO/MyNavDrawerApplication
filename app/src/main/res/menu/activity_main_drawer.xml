@@ -20,5 +20,26 @@
             android:id="@+id/nav_ferrari"
             android:icon="@drawable/baseline_add_card_24"
             android:title="Ferrari"/>
+
+        <item
+            android:id="@+id/nav_mercedes"
+            android:icon="@drawable/baseline_add_card_24"
+            android:title="Mercedes"/>
+
+        <item
+            android:id="@+id/nav_nissan"
+            android:icon="@drawable/baseline_add_card_24"
+            android:title="Nissan"/>
+
+        <item
+            android:id="@+id/nav_range_rover"
+            android:icon="@drawable/baseline_add_card_24"
+            android:title="Range Rover"/>
+
+        <item
+            android:id="@+id/nav_chevloret"
+            android:icon="@drawable/baseline_add_card_24"
+            android:title="Chevloret"/>
+
     </group>
 </menu>

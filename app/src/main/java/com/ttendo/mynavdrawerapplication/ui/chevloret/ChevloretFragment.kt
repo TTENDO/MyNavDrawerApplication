@@ -1,5 +1,6 @@
-package com.ttendo.mynavdrawerapplication.ui.ferrari
+package com.ttendo.mynavdrawerapplication.ui.chevloret
 
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.lifecycle.ViewModelProvider
-import com.ttendo.mynavdrawerapplication.databinding.FragmentFerrariBinding
+import com.ttendo.mynavdrawerapplication.databinding.FragmentChevloretBinding
 
-class FerrariFragment : Fragment() {
-    private var _binding: FragmentFerrariBinding? = null
+class ChevloretFragment : Fragment() {
+
+    private var _binding: FragmentChevloretBinding? = null
     private lateinit var webView: WebView
     // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
@@ -25,26 +26,17 @@ class FerrariFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val ferrariViewModel =
-            ViewModelProvider(this).get(FerrariViewModel::class.java)
+            ViewModelProvider(this).get(ChevroletViewModel::class.java)
 
-        _binding = FragmentFerrariBinding.inflate(inflater, container, false)
+        _binding = FragmentChevloretBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textFragment
-//        ferrariViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-
-        webView = binding.ferrariWebView
+        webView = binding.subaruWebView
         // WebViewClient allows you to handle onPageFinished and override Url loading.
         webView.webViewClient = WebViewClient()
 
         // this will load the url of the website
-        webView.loadUrl("https://www.ferrari.com/en-UG")
-//        webView.loadUrl("https://www.nissan.co.ug/")
-//        webView.loadUrl("https://www.landrover.com/range-rover/index.html")
-//        webView.loadUrl("https://www.mercedes-amg.com/en/home.html")
-//        webView.loadUrl("https://www.subaru.com/index.html")
+        webView.loadUrl("https://www.chevrolet.com/")
 
         // this will enable the javascript settings, it can also allow xss vulnerabilities
         webView.settings.javaScriptEnabled = true
@@ -59,4 +51,5 @@ class FerrariFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
